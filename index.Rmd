@@ -17,7 +17,16 @@ description: "Content for the VA Open Tech and Data Platform."
 
 The start of the data science modules for the open VA tech and data courseware. 
 
-* Probably want a section for instructors
+## Information for Instructors
 
-* And a section for students
+TBA (structure, what's contained, potential use)
+
+## Information for Learners
+
+TBA (structure, what's contained, potential use)
+
+## About the Project
+This set of lessons began as a pilot for the Virginia Open Data and Technology Curriculum and Platform (VOCP), a Commonwealth Provosts’ Initiative In Integrated Economic Development. The VOCP is an online, cloud-hosted, virtual environment intended to provide free education resources and a configured cloud environment (operating system, tools, data environment) for an instructor and their students.
+
+[Kendall Giles](https://ece.vt.edu/people/profile/giles) (Virginia Tech) and [Catherine Anderson](https://datascience.virginia.edu/people/catherine-anderson) (UVA) are the PIs. [Michele Claibourn](https://data.library.virginia.edu/michele-claibourn/) (UVA) is generating the initial curricular content.
 
