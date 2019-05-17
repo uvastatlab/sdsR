@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1558100256739.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "830930166",
+    "id" : "34D4160E",
+    "lastKnownWriteTime" : 1558100959,
+    "last_content_update" : 1558100959118,
+    "path" : "~/Box Sync/mpc/DataServices/DSI/provostproject/sdsR/01-premodule.Rmd",
+    "project_path" : "01-premodule.Rmd",
+    "properties" : {
+        "cursorPosition" : "6,175",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
