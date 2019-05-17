@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1558102328276.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CEF00324",
+    "lastKnownWriteTime" : 1558102579,
+    "last_content_update" : 1558102579634,
+    "path" : "~/Box Sync/mpc/DataServices/DSI/provostproject/sdsR/03-dataclean.Rmd",
+    "project_path" : "03-dataclean.Rmd",
+    "properties" : {
+        "cursorPosition" : "13,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
