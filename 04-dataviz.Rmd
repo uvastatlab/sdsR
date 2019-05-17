@@ -1,0 +1,13 @@
+# Data Visualization 
+
+Exploring, communicating data:
+
+* Motivation, ggplot2, how you visualize depends on variable types and question (distribution, comparison, relationship, composition, etc.) - quiz
+
+* Implementing basic visualization types (histogram/density, scatterplot, boxplot, barplot, time series, etc.) - quiz, exercise/practice
+
+* Complicating visualizations: more on geoms, aesthetics, arguments, facetting - quiz, exercise/practice
+
+* Customizing visualizations: titles, legends, axes, labels, themes, colors, saving plots - quiz, exercise/practice
+
+* Supplemental: modifying coordinates, customizing scales

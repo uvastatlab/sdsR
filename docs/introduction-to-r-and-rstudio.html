@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Introduction to R and RStudio | Some Data Science in R!</title>
+  <meta name="description" content="Content for the VA Open Tech and Data Platform." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Introduction to R and RStudio | Some Data Science in R!" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Content for the VA Open Tech and Data Platform." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Introduction to R and RStudio | Some Data Science in R!" />
+  
+  <meta name="twitter:description" content="Content for the VA Open Tech and Data Platform." />
+  
+
+<meta name="author" content="Michele Claibourn" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="motivations-and-descriptions.html">
+<link rel="next" href="data-preparation.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science Essentials</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="motivations-and-descriptions.html"><a href="motivations-and-descriptions.html"><i class="fa fa-check"></i><b>2</b> Motivations and Descriptions</a></li>
+<li class="chapter" data-level="3" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html"><i class="fa fa-check"></i><b>3</b> Introduction to R and RStudio</a></li>
+<li class="chapter" data-level="4" data-path="data-preparation.html"><a href="data-preparation.html"><i class="fa fa-check"></i><b>4</b> Data Preparation</a></li>
+<li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a></li>
+<li class="chapter" data-level="6" data-path="models-for-inference-the-linear-regression-model.html"><a href="models-for-inference-the-linear-regression-model.html"><i class="fa fa-check"></i><b>6</b> Models for inference: the Linear Regression Model</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Some Data Science in R!</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction-to-r-and-rstudio" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Introduction to R and RStudio</h1>
+<ul>
+<li><p>About R, orientation to environment (RStudio); writing commands (editor, console, environment) - exercise/practice</p></li>
+<li><p>Working directories, reading data, using packages - quiz, exercise/practice</p></li>
+<li><p>Variable types, very basic operations on data - quiz, exercise/practice</p></li>
+<li><p>R scripts and reproducibility, R projects and collaboration - quiz</p></li>
+<li><p>Supplemental: Installing/updating R and RStudio, learning resources</p></li>
+</ul>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="motivations-and-descriptions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-preparation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-randrstudio.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["data-science-essentials.pdf", "data-science-essentials.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

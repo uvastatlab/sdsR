@@ -1,0 +1,5 @@
+# Motivations and Descriptions
+
+* Motivation, intent, purpose of the content/modules (all topics could be/are courses unto themselves; lower barrier to starting to work with data in interesting ways, motivate taking additional courses, learning more) - no quiz, exercise
+
+* About the data we'll use (to be used with any subset of key modules) - quiz

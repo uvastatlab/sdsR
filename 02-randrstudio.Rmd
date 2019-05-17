@@ -1,0 +1,11 @@
+# Introduction to R and RStudio
+
+* About R, orientation to environment (RStudio); writing commands (editor, console, environment) - exercise/practice
+
+* Working directories, reading data, using packages - quiz, exercise/practice
+
+* Variable types, very basic operations on data - quiz, exercise/practice
+
+* R scripts and reproducibility, R projects and collaboration - quiz
+
+* Supplemental: Installing/updating R and RStudio, learning resources

@@ -1,0 +1,15 @@
+# Models for inference: the Linear Regression Model
+
+* Motivation, modeling for inference, the linear regression model conceptually
+
+* Model exploration and linearity (potential transformations) - quiz, exercise/practice
+
+* Implementing and interpreting the linear model - quiz, exercise/practice
+
+* Model specification, model comparison - quiz, exercise/practice
+
+* Model evaluation (diagnostics, learning from errors) - quiz, exercise/practice
+
+* Model communication (visualizing coefficients, predictions) - quiz, exercise/practice
+
+* Supplemental: basic awareness of related models

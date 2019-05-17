@@ -1,0 +1,13 @@
+# Data Preparation 
+
+Data cleaning, wrangling, engineering:
+
+* Motivation, dplyr, more on variable types (what operations are meaningful) - quiz
+
+* Isolating data (select, filter, arrange, distinct), the pipe operator - quiz, exercise/practice
+
+* Deriving and summarizing data (mutate, summarize, group_by, tally/count, rename/recode) - quiz, exercise/practice
+
+* Working with factors, saving/restoring R objects - quiz, exercise/practice
+
+* Supplemental: joining, reshaping

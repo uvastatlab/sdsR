@@ -1,0 +1,23 @@
+--- 
+title: "Some Data Science in R!"
+author: "Michele Claibourn"
+date: "May 2019"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+# cover-image: path to image
+description: "Content for the VA Open Tech and Data Platform."
+---
+
+
+# Introduction
+
+The start of the data science modules for the open VA tech and data courseware. 
+
+* Probably want a section for instructors
+
+* And a section for students
+
