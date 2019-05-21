@@ -27,7 +27,7 @@ TBA
 * Variable types
 * Basic operations on data
 
-## Check Understanding
+### Check Understanding
 
 TBA
 
@@ -37,7 +37,7 @@ TBA
 * R projects and collaboration
 * Rmarkdown
 
-## Check Understanding
+### Check Understanding
 
 TBA
 
