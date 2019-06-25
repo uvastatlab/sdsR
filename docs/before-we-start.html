@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Data Visualization | Some Data Science in R!</title>
+  <title>Chapter 2 Before We Start | Some Data Science in R!</title>
   <meta name="description" content="Content for the VA Open Tech and Data Platform." />
   <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Data Visualization | Some Data Science in R!" />
+  <meta property="og:title" content="Chapter 2 Before We Start | Some Data Science in R!" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Data Visualization | Some Data Science in R!" />
+  <meta name="twitter:title" content="Chapter 2 Before We Start | Some Data Science in R!" />
   
   <meta name="twitter:description" content="Content for the VA Open Tech and Data Platform." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-preparation.html">
-<link rel="next" href="models-for-inference.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="introduction-to-r-and-rstudio.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -164,72 +164,50 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-visualization" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Data Visualization</h1>
-<p>Intro TBA: Exploring, communicating data:</p>
-<div id="ggplot2" class="section level2">
-<h2><span class="header-section-number">5.1</span> ggplot2</h2>
+<div id="before-we-start" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Before We Start</h1>
+<p>Before we start in earnest, let’s talk about data science workflows. Also, we’ll learn a bit about the data we’ll be working with throughout the lessons.</p>
+<div id="data-science-workflows" class="section level2">
+<h2><span class="header-section-number">2.1</span> Data Science Workflows</h2>
+<p>The lessons are intended to step through some of the initial and necessary steps of most data science worfklows:</p>
+<ol style="list-style-type: decimal">
+<li><p>Loading data, examining and cleaning data, and manipulating data – renaming and recoding variables, deriving new variables, arranging data, joining data sets, and reshaping data (Chapter 4 - <a href="data-preparation.html#data-preparation">Data Preparation</a>);</p></li>
+<li><p>Visualizing and exploring data graphically, looking for unusual observations, variable distributions, unexpected patterns, or anticipated relationships (Chapter 5 - <a href="data-visualization.html#data-visualization">Data Visualization</a>);</p></li>
+<li><p>Building models with data starting with the linear regression model, one of the most commonly-used statistical models, including estimating, interpreting, and evaluation model results (Chapter 6 - <a href="models-for-inference.html#models-for-inference">Models for Inference</a>).</p></li>
+</ol>
+<p>Of course, first we have to learn about R and RStudio (Chapter 3 - <a href="introduction-to-r-and-rstudio.html#introduction-to-r-and-rstudio">Introduction to R and RStudio</a>)!</p>
+<p>Steps 1-3 constitute fundamental processes for answering questions with data. While we’ll address them in this sequence, data science workflows are much more iterative and entangled – we load data and look at it, do some visualization, some recoding and more visualization, some cleaning in response to what we see, more visualization, some modeling, and more visualization (for example).</p>
+<p>Garret Grolemund and Hadley Wickham, in <a href="https://r4ds.had.co.nz/introduction.html">R for Data Science</a>, represent it like this:</p>
+<p><img src="image/data-science-flow.png" width="67%" style="display: block; margin: auto;" /></p>
+<p>Throughout, the emphasis is on learning by doing. The material will provide examples and explanations, but often it will make more sense when you try to replicate and extend the examples or use the same techniques to answer a different question.</p>
+<p>Finally, we’ll emphasize reproduciility – making your work easy to reproduce for your future self or others – through clear and well-commented scripts that can be “read” to understand and recreate your steps. In fact, all of the code to generate these lessons are available in the <a href="https://github.com/uvastatlab/sdsR">GitHub repository for this project</a> – go crazy!</p>
+</div>
+<div id="the-data" class="section level2">
+<h2><span class="header-section-number">2.2</span> The Data</h2>
+<p>Throughout the lessons we’ll use data from the US Department of Education’s <a href="https://collegescorecard.ed.gov/data/">College Scorecard</a> to inspire and illustrate the tools, procedures and methods.</p>
+<p>Some key points to develop:</p>
 <ul>
-<li>Motivation</li>
-<li>ggplot2</li>
-<li>Questions (distribution, comparison, relationship, composition, etc.)</li>
-<li>Variable types (what visualizations are meaningful)</li>
+<li><p>Because this project started as a pilot for an open course platform for high school or college instructors in Virginia, I wanted data that the most likely learners could relate to quickly and that could be used to address a wide variety of questions.</p></li>
+<li><p>The data is fairly complex with data on 7100+ institutions for 21 years (and 1900 fields). It’s often used to examine college completion, debt load, and a range of other outcomes. ADD MORE</p></li>
+<li><p>It is not, however, without limitations, mostly around transfer students. ADD MORE.</p></li>
 </ul>
-<div id="check-understanding-9" class="section level3">
-<h3><span class="header-section-number">5.1.1</span> Check Understanding</h3>
+<div id="key-variables" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Key Variables</h3>
+<p>TBA</p>
+</div>
+<div id="check-understanding" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Check Understanding</h3>
 <p>TBA</p>
 </div>
 </div>
-<div id="basic-visualizations" class="section level2">
-<h2><span class="header-section-number">5.2</span> Basic Visualizations</h2>
-<ul>
-<li>histograms/density</li>
-<li>scatterplots</li>
-<li>boxplots</li>
-<li>barplots</li>
-<li>time series</li>
-<li>etc.</li>
-</ul>
-<div id="check-understanding-10" class="section level3">
-<h3><span class="header-section-number">5.2.1</span> Check Understanding</h3>
-<p>TBA</p>
-</div>
-</div>
-<div id="complicating-visualizations" class="section level2">
-<h2><span class="header-section-number">5.3</span> Complicating visualizations</h2>
-<ul>
-<li>more on geoms</li>
-<li>more on aesthetics</li>
-<li>more on arguments</li>
-<li>facetting and small multiples</li>
-</ul>
-<div id="check-understanding-11" class="section level3">
-<h3><span class="header-section-number">5.3.1</span> Check Understanding</h3>
-<p>TBA</p>
-</div>
-</div>
-<div id="customizing-visualizations" class="section level2">
-<h2><span class="header-section-number">5.4</span> Customizing visualizations</h2>
-<ul>
-<li>titles</li>
-<li>legends</li>
-<li>axes</li>
-<li>labels</li>
-<li>themes</li>
-<li>colors</li>
-<li>saving plots</li>
-</ul>
-<div id="check-understanding-12" class="section level3">
-<h3><span class="header-section-number">5.4.1</span> Check Understanding</h3>
-<p>TBA</p>
-</div>
-</div>
-<div id="supplemental-material-2" class="section level2">
-<h2><span class="header-section-number">5.5</span> Supplemental Material</h2>
-<ul>
-<li>Modifying coordinates</li>
-<li>Customizing scales</li>
-</ul>
+<div id="setting-up-optional" class="section level2">
+<h2><span class="header-section-number">2.3</span> Setting Up (Optional)</h2>
+<p>Within the Virginia Open Data and Technology Platform, you’ll have access to R and Rstudio and the packages we’ll use. You should be fine.</p>
+<p>If you’re working on your own computer, or if you want to be ready to work on your own computer when you’ve completed these lessons, you’ll need to install R and RStudio on your computer (we’ll talk about what these are in the next lesson). Both are freely avialable online.</p>
+<ol style="list-style-type: decimal">
+<li>First, install R. Download R from the <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a>, selecting the link that corresponds to your computer’s operating system (Linux, Mac OS X, Windows), and installing the package once it’s downloaded.</li>
+<li>Then, install RStudio. Go to <a href="https://www.rstudio.com/products/rstudio/download/">RStudio’s download page</a> and click Download under RStudio Desktop. Under “Installers for Supported Platforms” select the appropriate installer for your operating system. Once it’s downloaded, click the downloaded installer.</li>
+</ol>
 
 </div>
 </div>
@@ -238,8 +216,8 @@
           </div>
         </div>
       </div>
-<a href="data-preparation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="models-for-inference.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction-to-r-and-rstudio.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -269,7 +247,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-dataviz.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-premodule.Rmd",
 "text": "Edit"
 },
 "history": {

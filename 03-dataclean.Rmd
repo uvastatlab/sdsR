@@ -1,4 +1,4 @@
-# Data Preparation 
+# Data Preparation
 
 Intro TBA: Data cleaning, wrangling, engineering
 

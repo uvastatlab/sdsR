@@ -15,18 +15,60 @@ description: "Content for the VA Open Tech and Data Platform."
 
 # Introduction
 
-The start of the data science modules for the open VA tech and data courseware. 
+Welcome! This material constitutes a set of lessons on using R for data exploration, preparation, visualization, and basic analysis. It contains guided explanations, small interactive exercises, and challenge exercises to be completed in R. The goal is to get learners up and running with R quickly so they can begin working on their own questions with their own data. 
+
+Inspired by many excellent online open resources for learning data science in R, these lessons are meant to supplement student learning within other environments -- courses, independent study, research labs, and the like. The lessons will only scratch the surface, focusing on applications. Diving into R to work with data is one of the best ways to learn it but students and instructors should treat this as an introduction to implementing ideas in R and pursue other ways of delving deeper into the concepts and approaches we'll see in action.
+
+## Motivation and Approach
+
+Some key points to develop:
+
+* Data science workflows: keep it minimal, a few lessons about the sort of things everyone needs to know how to do regardless of the domain, the data, the design of the study.
+
+* Intended to inroduce you fairly gently into the practice of answering questions with data -- data analysis -- the way a researcher, or data scientist, or civic leader, or data journalist might.
+
+* Computing skills are necessary for the contemporary practice of data analysis -- there's no getting around the need to learn a little coding.
+
+* But this has gotten easier and more intuitive with the development of the tidyverse, which will be heavily emphasized.
+
+* Lower barrier to starting to work with data in interesting ways
+
+* But motivate taking additional courses, learning more
+
+* All topics could be/are courses unto themselves -- a caveat worth repeating (so I will)
+
+* An emphasis on civic data science -- because that's what floats my boat (and I hope you'll consider using your skills for the benefit of your community at some point).
+
+
 
 ## Information for Instructors
 
-TBA (structure, what's contained, potential use)
+The material is intended to be easily incorporated into other classes as a short module and could be used in multiple ways. Each lesson will contain explanations and illustrations available on line accompanied by short interactive exercises for students to try out new ideas and functions. In addition, there are challenge exercises for each lesson that ask students to create their own scripts to apply the material to address new questions. The challenge exercises are accompanied by solutions, but these will often represent only one possible approach.
+
+* Students might be asked to complete a lesson prior to class, reading the explanations and completing interactive excericses, so that instructional time can be spent clarifying or expanding the material, going deeper into foundations or further into more advanced approaches. The material might supplement a series of classes or constitute a lab component for mutiple weeks.
+* Students might be asked to complete a series of lessons on their own, including the challenge exercises, and then given the chance to apply the techniques to course-related data or their own projects. Challenge exercises might be graded or simply serve as references for students when working with new data.
+* Instructors might choose to use these materials as a starting point for their own examples or exercises or to reconstruct new problem sets based on the data and ideas provided. Feel free to make it yours.
+
 
 ## Information for Learners
 
-TBA (structure, what's contained, potential use)
+While these materials are written as a resource for instructors seeking to get students doing data analysis and data science in R for course purposes, students might choose to use these materials on their own as well. In this case, I recommend plodding through methodically -- reading the material and engaging the interactive exercises, working through the challenge exercises without reference to possible solutions. Here's a chance to do what most researchers do -- logic it out, google for solutions, bang your heast against the desk every now and then in frustration, ask a colleague, and try again. By the time you look at the possible solutions, you may have found a better alternative. Bask a little -- it's a good feeling! 
+
+But seriously, make sure you have other means for learning about statistics and inference, data visualization and information design, measurement and research design, data ethics and communication!
+
 
 ## About the Project
+
 This set of lessons began as a pilot for the Virginia Open Data and Technology Curriculum and Platform (VOCP), a Commonwealth Provosts’ Initiative In Integrated Economic Development. The VOCP is an online, cloud-hosted, virtual environment intended to provide free education resources and a configured cloud environment (operating system, tools, data environment) for an instructor and their students.
 
 [Kendall Giles](https://ece.vt.edu/people/profile/giles) (Virginia Tech) and [Catherine Anderson](https://datascience.virginia.edu/people/catherine-anderson) (UVA) are the PIs. [Michele Claibourn](https://data.library.virginia.edu/michele-claibourn/) (UVA) is generating the initial curricular content.
 
+
+## Learning More
+
+There are many excellent and open resources for learning to do data science in R. Some of my favorites:
+
+* Grolemund and Wickham's [R for Data Science](https://r4ds.had.co.nz/)
+* Irizarry's [Introduction to Data Science: Data Analysis and Prediction Algorithms with R](https://rafalab.github.io/dsbook/)
+* Ismay and Kim's [Statistical Inference via Data Science: A moderndive into R and the tidyverse](https://moderndive.com/index.html)
+* RStudio's [Primers](https://rstudio.cloud/learn/primers) (interactive tutorials) and [Webinars](https://www.rstudio.com/resources/webinars/data-science-essentials/)
