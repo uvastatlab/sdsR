@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Introduction to R and RStudio | Some Data Science in R!</title>
   <meta name="description" content="Content for the VA Open Tech and Data Platform." />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Introduction to R and RStudio | Some Data Science in R!" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Content for the VA Open Tech and Data Platform." />
   
@@ -30,15 +29,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="before-we-start.html">
-<link rel="next" href="data-preparation.html">
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="prev" href="before-we-start.html"/>
+<link rel="next" href="data-preparation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -47,7 +48,16 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -65,81 +75,105 @@
 <li><a href="./">Data Science Essentials</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#motivation-and-approach"><i class="fa fa-check"></i><b>1.1</b> Motivation and Approach</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#information-for-instructors"><i class="fa fa-check"></i><b>1.2</b> Information for Instructors</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#information-for-learners"><i class="fa fa-check"></i><b>1.3</b> Information for Learners</a></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#about-the-project"><i class="fa fa-check"></i><b>1.4</b> About the Project</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#learning-more"><i class="fa fa-check"></i><b>1.5</b> Learning More</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="before-we-start.html"><a href="before-we-start.html"><i class="fa fa-check"></i><b>2</b> Before We Start</a><ul>
+<li class="chapter" data-level="2" data-path="before-we-start.html"><a href="before-we-start.html"><i class="fa fa-check"></i><b>2</b> Before We Start</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="before-we-start.html"><a href="before-we-start.html#data-science-workflows"><i class="fa fa-check"></i><b>2.1</b> Data Science Workflows</a></li>
-<li class="chapter" data-level="2.2" data-path="before-we-start.html"><a href="before-we-start.html#the-data"><i class="fa fa-check"></i><b>2.2</b> The Data</a><ul>
+<li class="chapter" data-level="2.2" data-path="before-we-start.html"><a href="before-we-start.html#the-data"><i class="fa fa-check"></i><b>2.2</b> The Data</a>
+<ul>
 <li class="chapter" data-level="2.2.1" data-path="before-we-start.html"><a href="before-we-start.html#key-variables"><i class="fa fa-check"></i><b>2.2.1</b> Key Variables</a></li>
 <li class="chapter" data-level="2.2.2" data-path="before-we-start.html"><a href="before-we-start.html#check-understanding"><i class="fa fa-check"></i><b>2.2.2</b> Check Understanding</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="before-we-start.html"><a href="before-we-start.html#setting-up-optional"><i class="fa fa-check"></i><b>2.3</b> Setting Up (Optional)</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html"><i class="fa fa-check"></i><b>3</b> Introduction to R and RStudio</a><ul>
-<li class="chapter" data-level="3.1" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#about-r-and-rstudio"><i class="fa fa-check"></i><b>3.1</b> About R and RStudio</a><ul>
+<li class="chapter" data-level="3" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html"><i class="fa fa-check"></i><b>3</b> Introduction to R and RStudio</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#about-r-and-rstudio"><i class="fa fa-check"></i><b>3.1</b> About R and RStudio</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#check-understanding-1"><i class="fa fa-check"></i><b>3.1.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#getting-started"><i class="fa fa-check"></i><b>3.2</b> Getting Started</a><ul>
+<li class="chapter" data-level="3.2" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#getting-started"><i class="fa fa-check"></i><b>3.2</b> Getting Started</a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#check-understanding-2"><i class="fa fa-check"></i><b>3.2.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#basic-operations"><i class="fa fa-check"></i><b>3.3</b> Basic Operations</a><ul>
+<li class="chapter" data-level="3.3" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#basic-operations"><i class="fa fa-check"></i><b>3.3</b> Basic Operations</a>
+<ul>
 <li class="chapter" data-level="3.3.1" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#check-understanding-3"><i class="fa fa-check"></i><b>3.3.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#reproducibility-and-collaboration"><i class="fa fa-check"></i><b>3.4</b> Reproducibility and Collaboration</a><ul>
+<li class="chapter" data-level="3.4" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#reproducibility-and-collaboration"><i class="fa fa-check"></i><b>3.4</b> Reproducibility and Collaboration</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#check-understanding-4"><i class="fa fa-check"></i><b>3.4.1</b> Check Understanding</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="introduction-to-r-and-rstudio.html"><a href="introduction-to-r-and-rstudio.html#supplemental-material"><i class="fa fa-check"></i><b>3.5</b> Supplemental Material</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="data-preparation.html"><a href="data-preparation.html"><i class="fa fa-check"></i><b>4</b> Data Preparation</a><ul>
-<li class="chapter" data-level="4.1" data-path="data-preparation.html"><a href="data-preparation.html#dplyr"><i class="fa fa-check"></i><b>4.1</b> dplyr</a><ul>
+<li class="chapter" data-level="4" data-path="data-preparation.html"><a href="data-preparation.html"><i class="fa fa-check"></i><b>4</b> Data Preparation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="data-preparation.html"><a href="data-preparation.html#dplyr"><i class="fa fa-check"></i><b>4.1</b> dplyr</a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="data-preparation.html"><a href="data-preparation.html#check-understanding-5"><i class="fa fa-check"></i><b>4.1.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="data-preparation.html"><a href="data-preparation.html#isolating-data"><i class="fa fa-check"></i><b>4.2</b> Isolating Data</a><ul>
+<li class="chapter" data-level="4.2" data-path="data-preparation.html"><a href="data-preparation.html#isolating-data"><i class="fa fa-check"></i><b>4.2</b> Isolating Data</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="data-preparation.html"><a href="data-preparation.html#check-understanding-6"><i class="fa fa-check"></i><b>4.2.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="data-preparation.html"><a href="data-preparation.html#deriving-and-summarizing-data"><i class="fa fa-check"></i><b>4.3</b> Deriving and summarizing data</a><ul>
+<li class="chapter" data-level="4.3" data-path="data-preparation.html"><a href="data-preparation.html#deriving-and-summarizing-data"><i class="fa fa-check"></i><b>4.3</b> Deriving and summarizing data</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="data-preparation.html"><a href="data-preparation.html#check-understanding-7"><i class="fa fa-check"></i><b>4.3.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="data-preparation.html"><a href="data-preparation.html#factors"><i class="fa fa-check"></i><b>4.4</b> Factors!</a><ul>
+<li class="chapter" data-level="4.4" data-path="data-preparation.html"><a href="data-preparation.html#factors"><i class="fa fa-check"></i><b>4.4</b> Factors!</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="data-preparation.html"><a href="data-preparation.html#check-understanding-8"><i class="fa fa-check"></i><b>4.4.1</b> Check Understanding</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="data-preparation.html"><a href="data-preparation.html#supplemental-material-1"><i class="fa fa-check"></i><b>4.5</b> Supplemental Material</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a><ul>
-<li class="chapter" data-level="5.1" data-path="data-visualization.html"><a href="data-visualization.html#ggplot2"><i class="fa fa-check"></i><b>5.1</b> ggplot2</a><ul>
+<li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="data-visualization.html"><a href="data-visualization.html#ggplot2"><i class="fa fa-check"></i><b>5.1</b> ggplot2</a>
+<ul>
 <li class="chapter" data-level="5.1.1" data-path="data-visualization.html"><a href="data-visualization.html#check-understanding-9"><i class="fa fa-check"></i><b>5.1.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="data-visualization.html"><a href="data-visualization.html#basic-visualizations"><i class="fa fa-check"></i><b>5.2</b> Basic Visualizations</a><ul>
+<li class="chapter" data-level="5.2" data-path="data-visualization.html"><a href="data-visualization.html#basic-visualizations"><i class="fa fa-check"></i><b>5.2</b> Basic Visualizations</a>
+<ul>
 <li class="chapter" data-level="5.2.1" data-path="data-visualization.html"><a href="data-visualization.html#check-understanding-10"><i class="fa fa-check"></i><b>5.2.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="data-visualization.html"><a href="data-visualization.html#complicating-visualizations"><i class="fa fa-check"></i><b>5.3</b> Complicating visualizations</a><ul>
+<li class="chapter" data-level="5.3" data-path="data-visualization.html"><a href="data-visualization.html#complicating-visualizations"><i class="fa fa-check"></i><b>5.3</b> Complicating visualizations</a>
+<ul>
 <li class="chapter" data-level="5.3.1" data-path="data-visualization.html"><a href="data-visualization.html#check-understanding-11"><i class="fa fa-check"></i><b>5.3.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="data-visualization.html"><a href="data-visualization.html#customizing-visualizations"><i class="fa fa-check"></i><b>5.4</b> Customizing visualizations</a><ul>
+<li class="chapter" data-level="5.4" data-path="data-visualization.html"><a href="data-visualization.html#customizing-visualizations"><i class="fa fa-check"></i><b>5.4</b> Customizing visualizations</a>
+<ul>
 <li class="chapter" data-level="5.4.1" data-path="data-visualization.html"><a href="data-visualization.html#check-understanding-12"><i class="fa fa-check"></i><b>5.4.1</b> Check Understanding</a></li>
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="data-visualization.html"><a href="data-visualization.html#supplemental-material-2"><i class="fa fa-check"></i><b>5.5</b> Supplemental Material</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="models-for-inference.html"><a href="models-for-inference.html"><i class="fa fa-check"></i><b>6</b> Models for Inference</a><ul>
+<li class="chapter" data-level="6" data-path="models-for-inference.html"><a href="models-for-inference.html"><i class="fa fa-check"></i><b>6</b> Models for Inference</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="models-for-inference.html"><a href="models-for-inference.html#the-linear-regression-model-conceptually"><i class="fa fa-check"></i><b>6.1</b> The linear regression model conceptually</a></li>
-<li class="chapter" data-level="6.2" data-path="models-for-inference.html"><a href="models-for-inference.html#model-exploration"><i class="fa fa-check"></i><b>6.2</b> Model Exploration</a><ul>
+<li class="chapter" data-level="6.2" data-path="models-for-inference.html"><a href="models-for-inference.html#model-exploration"><i class="fa fa-check"></i><b>6.2</b> Model Exploration</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="models-for-inference.html"><a href="models-for-inference.html#check-understanding-13"><i class="fa fa-check"></i><b>6.2.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="models-for-inference.html"><a href="models-for-inference.html#implementation-and-interpretation"><i class="fa fa-check"></i><b>6.3</b> Implementation and Interpretation</a><ul>
+<li class="chapter" data-level="6.3" data-path="models-for-inference.html"><a href="models-for-inference.html#implementation-and-interpretation"><i class="fa fa-check"></i><b>6.3</b> Implementation and Interpretation</a>
+<ul>
 <li class="chapter" data-level="6.3.1" data-path="models-for-inference.html"><a href="models-for-inference.html#check-understanding-14"><i class="fa fa-check"></i><b>6.3.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="6.4" data-path="models-for-inference.html"><a href="models-for-inference.html#model-specification"><i class="fa fa-check"></i><b>6.4</b> Model Specification</a><ul>
+<li class="chapter" data-level="6.4" data-path="models-for-inference.html"><a href="models-for-inference.html#model-specification"><i class="fa fa-check"></i><b>6.4</b> Model Specification</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="models-for-inference.html"><a href="models-for-inference.html#check-understanding-15"><i class="fa fa-check"></i><b>6.4.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="models-for-inference.html"><a href="models-for-inference.html#model-evaluation"><i class="fa fa-check"></i><b>6.5</b> Model Evaluation</a><ul>
+<li class="chapter" data-level="6.5" data-path="models-for-inference.html"><a href="models-for-inference.html#model-evaluation"><i class="fa fa-check"></i><b>6.5</b> Model Evaluation</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="models-for-inference.html"><a href="models-for-inference.html#check-understanding-16"><i class="fa fa-check"></i><b>6.5.1</b> Check Understanding</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="models-for-inference.html"><a href="models-for-inference.html#model-communication"><i class="fa fa-check"></i><b>6.6</b> Model Communication</a><ul>
+<li class="chapter" data-level="6.6" data-path="models-for-inference.html"><a href="models-for-inference.html#model-communication"><i class="fa fa-check"></i><b>6.6</b> Model Communication</a>
+<ul>
 <li class="chapter" data-level="6.6.1" data-path="models-for-inference.html"><a href="models-for-inference.html#check-understanding-17"><i class="fa fa-check"></i><b>6.6.1</b> Check Understanding</a></li>
 </ul></li>
 <li class="chapter" data-level="6.7" data-path="models-for-inference.html"><a href="models-for-inference.html#supplemental-material-3"><i class="fa fa-check"></i><b>6.7</b> Supplemental Material</a></li>
@@ -164,58 +198,58 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introduction-to-r-and-rstudio" class="section level1">
-<h1><span class="header-section-number">Chapter 3</span> Introduction to R and RStudio</h1>
+<div id="introduction-to-r-and-rstudio" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Introduction to R and RStudio<a href="introduction-to-r-and-rstudio.html#introduction-to-r-and-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Intro TBA</p>
-<div id="about-r-and-rstudio" class="section level2">
-<h2><span class="header-section-number">3.1</span> About R and RStudio</h2>
+<div id="about-r-and-rstudio" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> About R and RStudio<a href="introduction-to-r-and-rstudio.html#about-r-and-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Orientation to environment (RStudio)</li>
 <li>Writing commands (editor, console, environment)</li>
 <li>Screen capture as illustration</li>
 </ul>
-<div id="check-understanding-1" class="section level3">
-<h3><span class="header-section-number">3.1.1</span> Check Understanding</h3>
+<div id="check-understanding-1" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Check Understanding<a href="introduction-to-r-and-rstudio.html#check-understanding-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>TBA</p>
 </div>
 </div>
-<div id="getting-started" class="section level2">
-<h2><span class="header-section-number">3.2</span> Getting Started</h2>
+<div id="getting-started" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Getting Started<a href="introduction-to-r-and-rstudio.html#getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Working directories</li>
 <li>Reading data</li>
 <li>Using packages</li>
 </ul>
-<div id="check-understanding-2" class="section level3">
-<h3><span class="header-section-number">3.2.1</span> Check Understanding</h3>
+<div id="check-understanding-2" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Check Understanding<a href="introduction-to-r-and-rstudio.html#check-understanding-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>TBA</p>
 </div>
 </div>
-<div id="basic-operations" class="section level2">
-<h2><span class="header-section-number">3.3</span> Basic Operations</h2>
+<div id="basic-operations" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Basic Operations<a href="introduction-to-r-and-rstudio.html#basic-operations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Variable types</li>
 <li>Basic operations on data</li>
 </ul>
-<div id="check-understanding-3" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> Check Understanding</h3>
+<div id="check-understanding-3" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Check Understanding<a href="introduction-to-r-and-rstudio.html#check-understanding-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>TBA</p>
 </div>
 </div>
-<div id="reproducibility-and-collaboration" class="section level2">
-<h2><span class="header-section-number">3.4</span> Reproducibility and Collaboration</h2>
+<div id="reproducibility-and-collaboration" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Reproducibility and Collaboration<a href="introduction-to-r-and-rstudio.html#reproducibility-and-collaboration" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>R scripts and reproducibility</li>
 <li>R projects and collaboration</li>
 <li>Rmarkdown</li>
 </ul>
-<div id="check-understanding-4" class="section level3">
-<h3><span class="header-section-number">3.4.1</span> Check Understanding</h3>
+<div id="check-understanding-4" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Check Understanding<a href="introduction-to-r-and-rstudio.html#check-understanding-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>TBA</p>
 </div>
 </div>
-<div id="supplemental-material" class="section level2">
-<h2><span class="header-section-number">3.5</span> Supplemental Material</h2>
+<div id="supplemental-material" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Supplemental Material<a href="introduction-to-r-and-rstudio.html#supplemental-material" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Installing/updating R and RStudio</li>
 <li>Learning resources</li>
@@ -233,43 +267,52 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"google": false,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-randrstudio.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"download": ["data-science-essentials.pdf", "data-science-essentials.epub"],
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/rstudio/bookdown-demo/edit/master/02-randrstudio.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["data-science-essentials.pdf", "data-science-essentials.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>
